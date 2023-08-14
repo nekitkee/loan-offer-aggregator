@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Offer Aggregator</title>
+    <script src="/js/app.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="form-container">
+    <h1>Loan Offer Aggregator</h1>
+    <form id="applicationForm">
+        <div class="form-group">
+            <input type="text" name="phone" placeholder="Phone">
+        </div>
+        <div class="form-group">
+            <input type="text" name="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <input type="number" name="monthlyIncome" placeholder="Monthly Income">
+        </div>
+        <div class="form-group">
+            <input type="number" name="monthlyExpenses" placeholder="Monthly Expenses">
+        </div>
+        <div class="form-group">
+            <input type="number" name="monthlyCreditLiabilities" placeholder="Monthly Credit Liabilities">
+        </div>
+        <div class="form-group">
+            <label for="maritalStatus">Marital Status:</label>
+            <select id="maritalStatus" name="maritalStatus">
+                <option value="SINGLE">Single</option>
+                <option value="MARRIED">Married</option>
+                <option value="DIVORCED">Divorced</option>
+                <option value="COHABITING">Cohabiting</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="number" name="dependents" placeholder="Dependents">
+        </div>
+        <div class="form-group">
+            <label>Agree to Data Usage:</label>
+            <input type="checkbox" name="agreeToDataUsage" id="agreeToDataUsage">
+        </div>
+        <div class="form-group">
+            <input type="number" name="amount" placeholder="Amount">
+        </div>
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <div class="loader" id="loader">
+    </div>
+
+    <div class="offers" id="offers">
+    </div>
+</div>
+</body>
+</html>
